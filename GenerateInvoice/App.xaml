@@ -1,0 +1,24 @@
+﻿<Application x:Class="GenerateInvoice.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:GenerateInvoice"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Name="TextBoxStyle" TargetType="TextBox">
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="MinHeight" Value="30"/>
+            <Setter Property="MinWidth" Value="700"/>
+            <Setter Property="Margin" Value="4, 4, 4, 4"/>
+        </Style>
+        <Style x:Name="ComboBoxStyle" TargetType="ComboBox">
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="MinHeight" Value="30"/>
+        <Setter Property="MinWidth" Value="700"/>
+            <Setter Property="Margin" Value="4, 4, 4, 4"/>
+        </Style>
+        <Style x:Name="LabelStyle" TargetType="Label">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </Application.Resources>
+</Application>

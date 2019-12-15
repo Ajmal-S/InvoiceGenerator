@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateInvoice", "GenerateInvoice\GenerateInvoice.csproj", "{3D1444A1-1C6E-4A96-9402-A6EE67EF8BAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoice", "Invoice\Invoice.csproj", "{374166CE-9115-472B-91E5-BC3D3CEFEB46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceDataTemplates", "InvoiceDataTemplates\InvoiceDataTemplates.csproj", "{1D3F3548-02E6-4EB5-AC41-74F8EEC6FC12}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "InvoiceSetup", "InvoiceSetup\InvoiceSetup.vdproj", "{91327507-6987-4365-A46D-8AFC2B44B08C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D1444A1-1C6E-4A96-9402-A6EE67EF8BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D1444A1-1C6E-4A96-9402-A6EE67EF8BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D1444A1-1C6E-4A96-9402-A6EE67EF8BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D1444A1-1C6E-4A96-9402-A6EE67EF8BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{374166CE-9115-472B-91E5-BC3D3CEFEB46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374166CE-9115-472B-91E5-BC3D3CEFEB46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374166CE-9115-472B-91E5-BC3D3CEFEB46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374166CE-9115-472B-91E5-BC3D3CEFEB46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D3F3548-02E6-4EB5-AC41-74F8EEC6FC12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D3F3548-02E6-4EB5-AC41-74F8EEC6FC12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D3F3548-02E6-4EB5-AC41-74F8EEC6FC12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D3F3548-02E6-4EB5-AC41-74F8EEC6FC12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91327507-6987-4365-A46D-8AFC2B44B08C}.Debug|Any CPU.ActiveCfg = Debug
+		{91327507-6987-4365-A46D-8AFC2B44B08C}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E33F7C3-BA39-4851-A234-AF2F13A11A89}
+	EndGlobalSection
+EndGlobal
