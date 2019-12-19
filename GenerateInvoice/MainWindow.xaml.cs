@@ -70,7 +70,7 @@ namespace GenerateInvoice
             {
                 ["WALK IN"] = " ",
                 ["CONCORD"] = "CONCORD EXOTIC VOYAGES(I) PVT.LTD. 407 / 408 - 4TH FLOOR, GERA IMPERIUM II, PATTO, PANJIM, GOA - 403001.",
-                ["CAPER"] = "CAPER TRAVEL COMPANY PVT. LTD.HOUSE NO-14/242/B	BEACH PLAZA ANNEXE BUILDING, NEAR KAMAT KINARA, NOMOXIM,CARANZALEM,MIRAMAR, TISWADI, GOA-403002 ",
+                ["CAPER"] = "CAPER TRAVEL COMPANY PVT. LTD. 279/A, Third Floor, Masjid Moth, South Extension- Part II,  New Delhi- 110049",
                 ["Minar"] = "Minar Travels (India) Pvt Ltd 101/102, 1st Floor Gera's Imperium II, Patto Plaza Panjim Goa 403001"
             };
 
@@ -78,7 +78,7 @@ namespace GenerateInvoice
             {
                 ["WALK IN"] = " ",
                 ["CONCORD"] = "30AACCC1364LIZZ",
-                ["CAPER"] = "30AABCC5600J1Z9",
+                ["CAPER"] = "07AABCC5600J2ZX",
                 ["Minar"] = "30AAACM1267A1ZC"
             };
 
@@ -158,16 +158,16 @@ namespace GenerateInvoice
             {
                 ["WALK IN"] = " ",
                 ["CONCORD"] = "CONCORD EXOTIC VOYAGES(I) PVT.LTD. 407 / 408 - 4TH FLOOR, GERA IMPERIUM II, PATTO, PANJIM, GOA - 403001.",
-                ["CAPER"] = "CAPER TRAVEL COMPANY PVT. LTD.HOUSE NO-14/242/B	BEACH PLAZA ANNEXE BUILDING, NEAR KAMAT KINARA, NOMOXIM,CARANZALEM,MIRAMAR, TISWADI, GOA-403002 ",
-                ["Minar"] = "Minar Travels (India) Pvt Ltd 101/102, 1st Floor Gera's Imperium II, Patto Plaza Panjim Goa 403001"
+                ["CAPER"] = "CAPER TRAVEL COMPANY PVT. LTD. 279/A, Third Floor, Masjid Moth, South Extension- Part II,  New Delhi- 110049",
+                ["MINAR"] = "Minar Travels (India) Pvt Ltd 101/102, 1st Floor Gera's Imperium II, Patto Plaza Panjim Goa 403001"
             };
 
             Dictionary<string, string> gst = new Dictionary<string, string>
             {
                 ["WALK IN"] = " ",
                 ["CONCORD"] = "30AACCC1364LIZZ",
-                ["CAPER"] = "30AABCC5600J1Z9",
-                ["Minar"] = "30AAACM1267A1ZC"
+                ["CAPER"] = "07AABCC5600J2ZX",
+                ["MINAR"] = "30AAACM1267A1ZC"
             };
 
             ExcelWorksheet workSheet = package.Workbook.Worksheets.FirstOrDefault();
@@ -236,9 +236,10 @@ namespace GenerateInvoice
                     var invTemplate = new InvoiceTemplate(costumer, invoiceDetail, company, rooms, services);
                     invTemplate.CreateSingleInvoice();
                 }
-                catch (Exception ex)
+                catch (FileNotFoundException ex)
                 {
-                    MessageBox.Show("It looks like there was an error in an entry\n If it looks like all entries are correct, contact developer and give the message below\n" + ex.Message);
+                    // Write error.
+                    MessageBox.Show("It looks like there was an error in an entry\n If it looks like all entries are correct, contact developer and give the message below\n " + ex.FileName);
                 }
             }
         }
