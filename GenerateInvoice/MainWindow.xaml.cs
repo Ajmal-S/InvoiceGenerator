@@ -71,7 +71,7 @@ namespace GenerateInvoice
                 ["WALK IN"] = " ",
                 ["CONCORD"] = "CONCORD EXOTIC VOYAGES(I) PVT.LTD. 407 / 408 - 4TH FLOOR, GERA IMPERIUM II, PATTO, PANJIM, GOA - 403001.",
                 ["CAPER"] = "CAPER TRAVEL COMPANY PVT. LTD. 279/A, Third Floor, Masjid Moth, South Extension- Part II,  New Delhi- 110049",
-                ["Minar"] = "Minar Travels (India) Pvt Ltd 101/102, 1st Floor Gera's Imperium II, Patto Plaza Panjim Goa 403001"
+                ["MINAR"] = "Minar Travels (India) Pvt Ltd 101/102, 1st Floor Gera's Imperium II, Patto Plaza Panjim Goa 403001"
             };
 
             Dictionary<string, string> gst = new Dictionary<string, string>
@@ -79,7 +79,7 @@ namespace GenerateInvoice
                 ["WALK IN"] = " ",
                 ["CONCORD"] = "30AACCC1364LIZZ",
                 ["CAPER"] = "07AABCC5600J2ZX",
-                ["Minar"] = "30AAACM1267A1ZC"
+                ["MINAR"] = "30AAACM1267A1ZC"
             };
 
             string gt = gst[CompanyName.SelectedItem.ToString()];
