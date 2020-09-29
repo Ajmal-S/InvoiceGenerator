@@ -30,7 +30,7 @@ jobs:
       run: nuget restore GenerateInvoice.sln
     
     - name: build-solution
-      run: msbuild GenerateInvoice.sln /p:Configuration=Release /p:DeployOnBuild=true /t:Package
+      run: msbuild GenerateInvoice.sln /p:Configuration=Release /p:DeployOnBuild=true 
     
     - name: upload-artifact
       uses: actions/upload-artifact@v1.0.0
